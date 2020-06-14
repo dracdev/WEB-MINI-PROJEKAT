@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreiranje Aranzmana</title>
+</head>
+<body>
+    <h1 style="color: green;">HTTP Kreiranje Aranzmana</h1>
+    <form action="http://localhost:8081/register" method="GET">
+        <table>
+            <tr>
+                <td><b>Broj Aranzmana (id): </b></td>
+                <td><input type="text" name="id_aranzmana" id="" required></td>
+            </tr>
+            <tr>
+                <td><b>Ime i Prezime putnika: </b></td>
+                <td><input type="text" name="full_name" id=""></td>
+            </tr>
+            <tr>
+                <td><b>Broj pasosa:</b></td>
+                <td><input type="text" name="passport_number" id=""></td>
+            </tr>
+            <tr>
+                <td><b>Naziv destinacije:</b></td>
+                <td><input type="text" name="destination_name" id=""></td>
+            </tr>
+            <tr>
+                <td><b>Tip odmora:</b></td>
+                <td><select name="vacation_type" id="">
+                    <option value="LETOVANJE">LETOVANJE</option>
+                    <option value="ZIMOVANJE">ZIMOVANJE</option>
+                    <option value="OBILAZAK_GRADA">OBILAZAK GRADA</option>
+               		</select>
+            	</td>
+            </tr>
+            <tr> 
+                <td><b>Cena:</b></td>
+                <td><input type="text" name="price" id=""></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <label for=""><b>HTTP Server:</b></label><input type="submit" value="posalji">
+                </td>
+            </tr>
+        </table>
+    </form>    
+    <br>   
+</body>
+</html>
